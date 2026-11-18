@@ -5,4 +5,4 @@ RUN npm ci --omit=dev
 COPY src ./src
 ENV NODE_ENV=production
 EXPOSE 4000
-CMD ["npm", "start"]
+CMD ["node", "src/server.js"]
